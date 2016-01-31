@@ -13,46 +13,51 @@ booleans = 1 < 1
 * 2 <= 1   // false, because 2 is not less than or equal to 1
 */
 //: ## We Will Do Exersize 1
-
-
-
-
-/*: ## Functions
-We have already used the `print() function, but we can declare our own Functions
-![function declaration](http://www.globalnerdy.com/wordpress/wp-content/uploads/2014/06/function-headers-in-swift.jpg "need"
+/*:
+## Some Other Loops.
+We need to learn some other types of loops. There are three in total.
 */
-//we have to change the variable book_of_the_bible because of local and gloabal variable types
-let book_of_the_bible = "John"
-let verces = ["6:68", "6:47-48", "13:7", "12:16", "2:22", "14:16", "17, and 26", "16:12 and 13"]
-for verce_index in verces {
-  print(book_of_the_bible + " " + verce_index)
+/*: # The first type is a `while` loop
+`while condition {
+statements
+}`
+*/
+/*: # The second type is a `for` loop
+`for initialization; condition; increment {
+statements
+}`
+*/
+/*: # The one we already know is a `for-in` loop
+`for x in a_list {
+statement
+}`
+*/
+/*: We will look at the `while` loop first.
+However to understand how the `while` loop works you are going to have to understand booleans
+Booleans are values `true` and `false`
+*/
+var joyful = false
+while joyful {
+    print("Rejoice in the Lord always; again I will say, rejoice! (Phl. 4:4)")
+}
+/*:
+This a bad loop because it never ends.
+Often you want to repeat a task a certain number of times.
+*/
+var counter = 0
+var number_of_times_to_print = 10
+let greatVerce = "8 Finally, brethren, whatever is true, whatever is honorable, whatever is right, whatever is pure, whatever is lovely, whatever is of good repute, if there is any excellence and if anything worthy of praise, dwell on these things. (Phl. 4:8"
+while counter <= number_of_times_to_print {
+    print(greatVerce)
+    counter = counter + 1
+}
+/*: Don't be scared by the multi line variable declaration
+You will learn more about loops by doing exersizes.
+You can do this same thing with a `for` loop better.
+*/
+for var counter = 0; counter <= number_of_times_to_print; counter = counter + 1 {
+    print(greatVerce)
 }
 
-//what if this was a list of my favorite verces I might want to be able to get this list in multiple spots in my program
-//this is one way to break large problems into small problems
-// hightlight the use of external names
-func getFavoriteVerces(array_of_verces: [String], _ book_of_the_bible: String) {
-  for verce_index in array_of_verces {
-    print(book_of_the_bible + " " + verce_index)
-  }
-}
-getFavoriteVerces(vercesg, book_of_the_bibleg)
-//this only prints it does not return data for us to work on
-
-func getFavoriteVerces(book_of_the_bible: String, array_of_verces: [String]) -> String {
-  for verce_index in array_of_verces {
-    return(book_of_the_bible + " " + verce_index)
-  }
-}
-
-
-//this does not give us what we want because you cant have a re turn statement in a value
-
-func getFavoriteVerces(book_of_the_bible: String, array_of_verces: [String]) -> String {
-  for verce_index in array_of_verces {
-    array_of_verces[verce_index] = "/(book_of_the_bible) /(array_of_verces[verce_index])"
-  }
-  return array_of_verces
-}
 //:# exersize 2
 //:# exersize 3
