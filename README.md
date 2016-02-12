@@ -1,0 +1,1 @@
+This repository is a template for teaching swift code syntax. The guide directory has some lessons I wrote over christmass break. The actual lessons directory is filled lessons I have already taught. The lesson numbering betwean the two directories is in no way related.

@@ -5,7 +5,7 @@ create the follow variables
 * 1 variable of type `Double`
 * 2 vables of type `Int`
 */
-//: ## The Documentation You will neede
+//: ## The Documentation You will need
 //: # Variable Syntax
 let variable_name = value
 var changeable_variable_name = value
