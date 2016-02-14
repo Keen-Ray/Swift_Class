@@ -1,6 +1,11 @@
-//: I want you to learn how to solve programing problems.
+/*: ## Algorithm
+* Executable
+* Unambiguous
+* Terminating
+We will do a **quiz** on algorithms now
+*/
 /*: ## Variables
-This is review. Think of variables like algebra values they are necessary to make code reusable
+I want you to think of variable like you think of letter in polynomials. You could also think of them like boxes that hold a value. Now we are going to do a **quiz** on variables
 */
 /*:
 ## Some Other Loops.
@@ -41,12 +46,11 @@ while counter <= number_of_times_to_print {
     counter = counter + 1
 }
 /*: Don't be scared by the multi line variable declaration
-You will learn more about loops by doing exersizes.
+You will learn more about loops by doing exercises.
 You can do this same thing with a `for` loop better.
 */
 for var counter = 0; counter <= number_of_times_to_print; counter = counter + 1 {
     print(greatVerce)
 }
 
-//:# exersize 2
-//:# exersize 3
+//:# exercise 2
