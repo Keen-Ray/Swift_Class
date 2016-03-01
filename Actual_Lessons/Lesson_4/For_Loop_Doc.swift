@@ -20,6 +20,13 @@ name = value - value2
 name = value + value2
 name = value / value2
 name = value % value2
+//: ## Your assignment
+/*:
+Write a program that calculates the a number to the power of an other number.
+* create 2 variables one that represents the number and an other number that represents the exponet
+* create 2 more variables one that copies the original number for later use and an other with the value of zero to be your counter
+* now create a while loop with the condition the_name_of_variables_representing_counter+1< the_name_of_variables_representing_the_exponet
+* now inside the loop add the code that you think will make the program work
 
 
 
